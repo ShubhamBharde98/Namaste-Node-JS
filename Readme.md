@@ -39,6 +39,7 @@
 #### "A server is a computer or software that continuously listens for client requests, processes them using algorithms or computations, and sends back responses."
 
 A server can refer to hardware, software, or both, depending on the context:-
+
 1. Hardware (Physical Machine):- A powerful computer designed to run server applications (e.g., a data center server).
 
 1. Software (Server Application):- A program that listens for and processes client requests (e.g., Apache, Nginx, Node.js server).
@@ -61,3 +62,31 @@ It is designed to be highly available (24/7), reliable, and scalable, making it 
 1. Application servers
 1. Database servers (MongoDB, MySQL)
 1. File servers 
+
+
+
+### JS Engine:-
+Without js engine js code cannot be executed a single line. 
+
+Javascript engine is just some piece of code that is written in C++ which parses, compiles & execute javascript code.
+
+Javascript engine (V8, SpiderMonkey) follows ECMAScript standards and ensures cross-browser consistency.
+
+Every Browser has own js engine:-
+1. Chrome & Node JS - V8 (Written in C++)
+1. Firefox - SpiderMonkey
+1. Microsoft Edge - V8 (previously used Chakra)
+1. Safari - JavaScriptCore / Nitro
+
+
+
+## ECMAScript:-
+#### "It is specification / standard for Scripting  language like Javascript."
+
+It is rules that followed by js engine. js implement things based on standard which is given by ECMA.
+
+It is maintained by ECMA International (TC39 committee).
+
+#### ECMA - European Computer Manufacturers Association.
+
+#### NOTE:- Javascript includes additional features that are not part of ECMAScript specification( eg:- DOM API, setTimeout/setInterval, fs.readFile, process )

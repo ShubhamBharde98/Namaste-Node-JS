@@ -90,3 +90,18 @@ It is maintained by ECMA International (TC39 committee).
 #### ECMA - European Computer Manufacturers Association.
 
 #### NOTE:- Javascript includes additional features that are not part of ECMAScript specification( eg:- DOM API, setTimeout/setInterval, fs.readFile, process )
+
+
+## Node JS REPL:-
+REPL is Acrynom for Read, Evaluate, Print, Loop
+
+we are write command ```node``` on terminal then we get Node REPL mode.
+
+## Global in NodeJS:-
+in browser :- "window" keyword is global object.
+
+in node js environment :- "global" keyword is global object.
+
+in any environment :- "globalThis" keyword is standard way to access the global object in any JavaScript environment.
+
+

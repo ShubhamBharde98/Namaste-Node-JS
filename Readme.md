@@ -105,3 +105,65 @@ in node js environment :- "global" keyword is global object.
 in any environment :- "globalThis" keyword is standard way to access the global object in any JavaScript environment.
 
 
+## Modules:-
+#### "A module is a separate file that encapsulates code (variables, functions, or classes) to promote reusability and maintainability."
+
+- By default, modules protect their variables and functions from leaking into the global scope.
+
+- To access them in another file, you must explicitly export and import them.
+
+
+
+
+### Types of modules:-
+### 1] CommonJS Module (Older way, Synchronous, .cjs) :-
+- used in Node JS by default
+
+- Loads modules synchronously.
+
+- Doesn't work in browsers without a bundler like Webpack.
+
+- #### Export Syntax:-
+
+    ```javascript
+    const sum = (a,b) => a+b
+
+    module.exports = sum
+    // OR
+    module.exports = {sum}
+    ```
+
+- #### Import Syntax:-
+
+    ```javascript
+    const data = require("<module path>")
+    ```
+    
+
+#### Note:- by default, module.exports is an empty object "{}"
+
+### 2] ES Module (Newer way, Asynchronous, .mjs) :-
+- Works natively in browsers and Node.js (if type: "module" is set in package.json).
+
+- Supports asynchronous imports.
+
+    
+- #### Default Export & Import:-
+
+    ``` javascript
+    // Default Export
+    export default < module name >
+
+    // Default Import
+    import < module name> from "< module path >"
+    ```
+
+- #### Named Export & Import:-
+
+    ``` javascript
+    // Named Export
+    export < module name > 
+    
+    // Named Import
+    import { < module name > } from "< module path >"
+    ```
